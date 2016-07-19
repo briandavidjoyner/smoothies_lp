@@ -1,0 +1,69 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+#lp_image1{
+	background-image: url(https://cdn.shopify.com/s/files/1/0171/2242/files/Header.jpg);
+	min-height:500px;
+	background-size:cover!important;
+}
+.lp_text_center{
+	position:relative;
+	height:500px;
+	width:100%;
+}
+.lp_headline_text{
+	transform: translate(-50%, -50%);
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	font-size: 9em;
+  	text-align: center;
+  	color:white;
+  	font-weight:700;
+	
+}
+#lp_value_prop{
+	padding: 30 0 30 0;
+	text-align: center;
+	font-size: 3em;
+}
+.lp_button{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 35px;
+    margin-top: 20px;
+    padding: 25 0 25px 0;
+    background-color:rgb(109, 192, 29);
+    width: 65%;
+    color:white;
+}
+.lp_inline{
+	display:inline-block;
+	width:50%;
+	min-height:550px;
+	vertical-align: top;
+	text-align:center;
+}
+.lp_1_column{
+	background-image:url(https://cdn.shopify.com/s/files/1/0171/2242/files/Left_Header.jpg?9765973004948205585);
+	background-size:cover;
+}
+.lp_2_column{
+
+}
+.lp_3_column{
+
+}
+.lp_4_column{
+
+}
+.lp_text_columm{
+	padding: 20 60 20 60;
+}
+.lp_large_font{
+	font-size:3em;
+	font-weight: 700;
+}
+.lp_align_bottom{
+	
+}
