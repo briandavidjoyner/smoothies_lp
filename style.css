@@ -1,6 +1,9 @@
 body{
 	font-family: 'Montserrat', sans-serif;
 }
+a{
+	text-decoration: none;
+}
 #lp_image1{
 	background-image: url(https://cdn.shopify.com/s/files/1/0171/2242/files/Header.jpg);
 	min-height:500px;
@@ -34,7 +37,7 @@ body{
     margin-top: 20px;
     padding: 25 0 25px 0;
     background-color:rgb(109, 192, 29);
-    width: 65%;
+    max-width: 730px;
     color:white;
 }
 .lp_inline{
@@ -49,21 +52,68 @@ body{
 	background-size:cover;
 }
 .lp_2_column{
-
 }
 .lp_3_column{
-
 }
 .lp_4_column{
-
 }
 .lp_text_columm{
-	padding: 20 60 20 60;
+	padding:10 130 70 130;
 }
 .lp_large_font{
-	font-size:3em;
+	font-size:4em;
 	font-weight: 700;
 }
 .lp_align_bottom{
-	
+	font-size:2em;
+	font-weight: 400;
+}
+.vp_circle{
+	z-index: 1000;
+	display:table;
+    position: relative;
+    text-align: center;
+    top:-350px;
+    margin-right:auto;
+    margin-left:auto;
+    border-radius: 150px;
+    background-color: rgb(109, 192, 29);
+    width: 150px;
+    height: 150px;
+    font-size:1.25em;
+    color:black;
+}
+.slide_up{
+	margin-top: -150px;
+}
+.table_cell{
+	display:table-cell;
+	vertical-align: middle;
+}
+.section_up{
+	position:relative;
+	top:-280px
+}
+.desktop_none{
+	display:none;
+}
+.circle_text_bold{
+	font-weight: 700;
+}
+@media only screen and (max-width: 1065px) {
+	.lp_text_columm{
+		padding: 80px 60px 20px 60px;
+	}
+	.vp_circle{
+		top:-700px;
+	}
+	.lp_inline{
+		width:100%;
+	}
+	.desktop_none{
+		display:inline-block;
+	}
+	.mobile_none{
+		display:none;
+	}
 }
