@@ -1,0 +1,279 @@
+<script type="text/javascript">
+$(document).ready(function() {
+
+				$(window).scroll(function(e){
+					var scrollTop = $(window).scrollTop();
+					var docHeight = $(document).height();
+					var winHeight = $(window).height();
+					var scrollPercent = (scrollTop) / (docHeight - winHeight);
+					var scrollPercentRounded = Math.round(scrollPercent*100);
+					show_no(scrollPercentRounded);
+				});
+			
+				function show_no(scrollPercentRounded){
+				if ( scrollPercentRounded > 20 ){
+					jQuery('#mobile_fixed_el').fadeIn();
+				} else {
+					jQuery('#mobile_fixed_el').fadeOut();
+				}
+				}
+			
+});
+
+</script>
+<style type="text/css">
+#lp_content{
+	font-family: 'Montserrat', sans-serif!important;
+	line-height: 1!important;
+	color:black!important;
+	background:white;
+}
+a{
+	text-decoration: none!important;
+}
+#lp_image1{
+	background-image: url(https://cdn.shopify.com/s/files/1/0171/2242/files/header_1500.jpg)!important;
+	min-height:500px!important;
+	background-size:cover!important;
+	background-repeat: no-repeat;
+	background-position:center;
+}
+.lp_text_center{
+	position: absolute!important;
+	height:500px!important;
+	width:100%!important;
+}
+.lp_headline_text{
+	transform: translate(-50%, -50%)!important;
+  	position: absolute!important;
+  	top: 50%!important;
+  	left: 50%!important;
+  	font-size: 9em!important;
+  	text-align: center!important;
+  	color:white!important;
+  	font-weight:700!important;
+}
+#lp_value_prop{
+	padding: 30px 0px 30px 0px!important;
+	text-align: center!important;
+	font-size: 3em!important;
+}
+#passport_logo{
+	padding-top: 30px;
+	max-width: 80%;
+}
+.lp_button{
+    margin-left: auto!important;
+    margin-right: auto!important;
+    font-size: 35px!important;
+    margin-top: 20px!important;
+    padding: 25px 0px 25px 0px!important;
+    background-color:rgb(109, 192, 29)!important;
+    max-width: 730px!important;
+    color:white!important;
+}
+.lp_inline{
+	display: inline-block!important;
+	width: 49%!important;
+	min-height: 550px!important;
+	vertical-align: top!important;
+	text-align: center!important;
+}
+.lp_1_column{
+	background-image:url(https://cdn.shopify.com/s/files/1/0171/2242/products/dcuisine-beef-short-ribs-1_2048x2048.jpg)!important;
+	background-size:cover!important;
+	background-position:center;
+}
+.lp_2_column{
+}
+.lp_3_column{
+	background-image:url(https://cdn.shopify.com/s/files/1/0171/2242/products/gift-card_64936dd2-83bc-4330-93d0-c26af613c446_large.png  )!important;
+	background-size:cover!important;
+	background-position:center;
+}
+.lp_4_column{
+}
+.lp_5_column{
+	background-image:url(https://cdn.shopify.com/s/files/1/0171/2242/files/Right_Header.jpg)!important;
+	background-size:cover!important;
+	background-position:center;
+}
+.lp_text_columm{
+	padding: 65px 130px 30px 130px!important;
+}
+.lp_large_font{
+	font-size: 4em!important;
+	font-weight: 700!important;
+}
+.lp_align_bottom{
+	font-size:2em!important;
+	font-weight: 400!important;
+}
+.vp_circle{
+	z-index: 1000!important;
+	display: table!important;
+    position: relative!important;
+    text-align: center!important;
+    top: -315px!important;
+    left:-1%!important;
+    margin-right:auto!important;
+    margin-left: auto!important;
+    border-radius: 150px!important;
+    background-color: rgb(109, 192, 29)!important;
+    width: 150px!important;
+    height: 150px!important;
+    font-size: 1.25em!important;
+    color: black!important;
+}
+.slide_up{
+	margin-top: -98px!important;
+}
+.table_cell{
+	display: table-cell!important;
+	vertical-align: middle!important;
+}
+.section_up{
+	position:relative!important;
+	top: -280px!important;
+}
+.desktop_none{
+	display:none!important;
+}
+.circle_text_bold{
+	font-weight: 700!important;
+}
+#mobile_text{
+	display:none;
+}
+#mobile_fixed_el{
+	display: none;
+}
+@media only screen and (max-width: 1150px) {
+	#mobile_fixed_el{
+		position: fixed;
+		bottom:0;
+		height:125px;
+		width:100%;
+		background-color:rgb(109, 192, 29)!important;
+		color:white;
+		text-align: center;
+	}
+	#mobile_el_down{
+		position: relative;
+    	top: 40px;
+	}
+	#mobile_text{
+		position: absolute;
+		display: initial!important;
+		height: 200px;
+    	width: 100%;
+		padding: 30px 0px 30px 0px!important;
+		text-align: center!important;
+		font-size: 3em!important;
+		font-weight: 700;
+		color:white;
+	}
+	.lp_headline_text{
+		font-size: 3em!important;
+		display:none;
+	}
+	#lp_image1{
+		min-height: 200px!important;
+		background-position: bottom center!important;
+		width:100%!important;
+	}
+	.lp_text_center{
+		height:200px!important;
+	}
+	#lp_value_prop{
+		font-size:2em!important;
+		padding:15px 10px 15px 2px!important;
+	}
+	.lp_button{
+		font-size: 25px!important;
+	}
+	.lp_1_column,.lp_2_column,.lp_3_column,.lp_4_column,.lp_5_column{
+		min-height:300px;
+	}
+	.lp_2_column{
+		display: table-cell!important;
+    	padding: 0px 0px 30px 0px;
+	}
+	.image_height_small{
+		min-height: 200px!important;
+	}
+	.lp_text_columm{
+		padding: 30px 20px 0px 20px!important;
+	}
+	.lp_align_bottom{
+		font-size: 1.75em!important;
+	}
+	.lp_large_font{
+		font-size: 2em!important;
+	}
+	.slide_up{
+		margin-top: 0px!important;
+	}
+	.vp_circle{
+		display:none!important;
+	}
+	.lp_inline{
+		width:100%!important;
+	}
+	.desktop_none{
+		display: inline-block!important;
+	}
+	.mobile_none{
+		display: none!important;
+	}
+}
+</style>
+<a href="/collections/entrees?passport"><div id="mobile_fixed_el">
+	<div id="mobile_el_down"><span style="font-weight:700;font-size:2em;">Click</span> To <span style="font-weight:700;font-size:2em;">Save 15%<br></span>On Your Order</div>
+</div></a>
+<div id="lp_content">
+	<div id="mobile_text">
+		<div class="lp_text_center">Convenient.<br>Nutritious.<br>Delicious.</div>
+	</div>
+	<div id="lp_image1">
+		<div class="lp_text_center">
+			<div class="lp_headline_text">Convenient.<br>Nutritious.<br>Delicious.</div>
+		</div>
+	</div>
+	<div id="lp_value_prop">
+		<div>Chef prepared frozen meals and organic smoothies by dcuisine</div>
+		<a href="/collections/entrees?passport"><div class="lp_button"><span style="font-weight:700;">Click</span> To <span style="font-weight:700;">Save 15%</span> On Your Order</div></a>
+		<img id="passport_logo" src="https://cdn.shopify.com/s/files/1/0171/2242/files/passport_corporate_lifestyle_dining.jpg">
+	</div>
+	<div>
+		<div class="lp_1_column lp_inline image_height_small"></div><div class="lp_2_column lp_inline">
+			<div class="lp_text_columm lp_large_font">Ready To Eat Meals</div>
+			<div class="lp_text_columm lp_align_bottom">Our foundation.  Chef made small batch meals ready to eat in a matter of minutes.  Just order, heat, and eat.</div>
+		</div>
+		<a href="/collections/entrees?passport"><div class="vp_circle section_1_circle">
+			<div class="table_cell">Get Started<br>Click To<br><span class="circle_text_bold">Save 15%</span></div>
+		</div></a>
+	</div>
+	<div class="slide_up">
+		<div class="lp_5_column lp_inline desktop_none image_height_small"></div><div class="lp_2_column lp_inline">
+			<div class="lp_text_columm lp_large_font">Organic Smoothies</div>
+			<div class="lp_text_columm lp_align_bottom"> Organic Greek yogurt + orchard fresh organic fruit make our smoothies a healthy choice for breakfast or a snack any time of the day!</div>
+		</div><div class="lp_5_column lp_inline mobile_none"></div>
+			<a href="/collections/entrees?passport"><div class="vp_circle section_1_circle">
+				<div class="table_cell">Get Started<br>Click To<br><span class="circle_text_bold">Save 15%</span></div>
+			</div></a>
+	</div>
+	<div class="slide_up">
+		<div class="lp_3_column lp_inline image_height_small"></div><div class="lp_2_column lp_inline">
+			<div class="lp_text_columm lp_large_font">Gifts</div>
+			<div class="lp_text_columm lp_align_bottom">Don't know what to send?  Let your friends and family choose by giving them a dcuisine gift card.</div>
+		</div>		
+			<a href="/collections/entrees?passport"><div class="vp_circle section_1_circle">
+				<div class="table_cell">Get Started<br>Click To<br><span class="circle_text_bold">Save 15%</span></div>
+			</div></a>
+	</div>
+
+	<div id="lp_value_prop" class="slide_up">
+			<div>Offer valid for Passport members only.</div>
+	</div>
+</div>	
